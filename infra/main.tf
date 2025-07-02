@@ -1,6 +1,6 @@
 module "azurerm_resource_group" {
   source = "../modules/azurerm_resource_group"
-  resource_group_name     = "todo-resource-group"
+  resource_group_name     = "todo-resource-group1"
   resource_group_location = "switzerlandnorth"
 }
 module "azurerm_virtual_network" {
