@@ -3,6 +3,11 @@ module "azurerm_resource_group" {
   resource_group_name     = "todo-resource-group1"
   resource_group_location = "switzerlandnorth"
 }
+module "azurerm_resource_group_101" {
+  source = "../modules/azurerm_resource_group"
+  resource_group_name     = "todo-resource-group101"
+  resource_group_location = "switzerlandnorth"
+}
 module "azurerm_virtual_network" {
   depends_on = [module.azurerm_resource_group]
   source = "../modules/azurerm_virtual_network"
